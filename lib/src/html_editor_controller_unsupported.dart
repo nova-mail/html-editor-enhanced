@@ -172,3 +172,12 @@ class HtmlEditorController {
   @internal
   void insertTable(String dimensions) {}
 }
+  void insertSignature(String? signature) {}
+  void removeSignature() {}
+  void setOnDragDropEvent(void Function(dynamic)? onDragDropEvent) {}
+  void execSummernoteAPI(String method, dynamic args) {}
+  void insertImage(String imagePath, String imageExtension, {String? imageName}) {}
+  void setFontSize(int size) {}
+  Future<bool> isActivatedCodeView() async => false;
+  void openInsertLinkDialog() {}
+  void updateBodyDirection(String direction) {}
