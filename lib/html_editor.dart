@@ -3,9 +3,12 @@ library html_editor;
 export 'package:html_editor_enhanced/src/widgets/toolbar_widget.dart';
 export 'package:html_editor_enhanced/utils/callbacks.dart';
 export 'package:html_editor_enhanced/utils/toolbar.dart';
+export 'package:html_editor_enhanced/utils/callbacks.dart';
+
 export 'package:html_editor_enhanced/utils/plugins.dart';
 export 'package:html_editor_enhanced/utils/file_upload_model.dart';
 export 'package:html_editor_enhanced/utils/options.dart';
+export 'package:html_editor_enhanced/utils/nova_mail_extensions.dart';
 export 'package:html_editor_enhanced/utils/utils.dart'
     hide setState, intersperse, getRandString;
 
@@ -34,7 +37,7 @@ enum NotificationType { info, warning, success, danger, plaintext }
 /// on the fly
 /// [summernote] - uses the default summernote buttons (no native controls and
 /// reduced feature support) //todo
-enum ToolbarType { nativeGrid, nativeScrollable, nativeExpandable }
+enum ToolbarType { nativeGrid, nativeScrollable, nativeExpandable, hide }
 
 /// Manages the position of the toolbar, whether above or below the editor
 /// [custom] - removes the toolbar. This is useful when you want to implement the
